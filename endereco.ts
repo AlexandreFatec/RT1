@@ -10,8 +10,4 @@ export default class Endereco {
         this.bairro = bairro;
         this.cidade = cidade;
     }
-
-    public mostrarEndereco(){
-        return `Cidade: ${this.cidade}`
-    }
 }
