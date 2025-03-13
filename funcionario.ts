@@ -1,11 +1,18 @@
+import Endereco from "./endereco"
+import Telefone from "./telefone"
+
 export default class Funcionario {
     public nome: string 
-    public numero: string
+    public matricula: string
     public cpf: string
+    public endereco: Endereco
+    public telefone: Telefone
  
-    constructor(nome: string, numero: string, cpf: string) {
+    constructor(nome: string, matricula: string, cpf: string,  endereco: Endereco, telefone: Telefone) {
         this.nome = nome;
-        this.numero = numero;  
+        this.matricula = matricula;  
         this.cpf = cpf;
+        this.endereco = endereco;
+        this.telefone = telefone;
     }
 }
